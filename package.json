@@ -12,6 +12,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "csv-parse": "^5.0.4",
     "dotenv": "^16.0.0",
     "yup": "^0.32.11"
   },

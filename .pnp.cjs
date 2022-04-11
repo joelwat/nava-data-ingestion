@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.11.26"],\
             ["@typescript-eslint/eslint-plugin", "virtual:fa036b0d334fd181bc81ec39b67210eb4c41e4ff6e6be309307ba0436801400da66036e5b712797fe2cd2d3ec7ef4718b4be1560d16720602ad060581b42b4cf#npm:5.18.0"],\
             ["@typescript-eslint/parser", "virtual:fa036b0d334fd181bc81ec39b67210eb4c41e4ff6e6be309307ba0436801400da66036e5b712797fe2cd2d3ec7ef4718b4be1560d16720602ad060581b42b4cf#npm:5.18.0"],\
+            ["csv-parse", "npm:5.0.4"],\
             ["dotenv", "npm:16.0.0"],\
             ["eslint", "npm:8.13.0"],\
             ["eslint-config-airbnb-base", "virtual:fa036b0d334fd181bc81ec39b67210eb4c41e4ff6e6be309307ba0436801400da66036e5b712797fe2cd2d3ec7ef4718b4be1560d16720602ad060581b42b4cf#npm:15.0.0"],\
@@ -2608,6 +2609,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["cssstyle", "npm:2.3.0"],\
             ["cssom", "npm:0.3.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["csv-parse", [\
+        ["npm:5.0.4", {\
+          "packageLocation": "./.yarn/cache/csv-parse-npm-5.0.4-26376aa2f5-e38b4fb8de.zip/node_modules/csv-parse/",\
+          "packageDependencies": [\
+            ["csv-parse", "npm:5.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5313,6 +5323,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:16.11.26"],\
             ["@typescript-eslint/eslint-plugin", "virtual:fa036b0d334fd181bc81ec39b67210eb4c41e4ff6e6be309307ba0436801400da66036e5b712797fe2cd2d3ec7ef4718b4be1560d16720602ad060581b42b4cf#npm:5.18.0"],\
             ["@typescript-eslint/parser", "virtual:fa036b0d334fd181bc81ec39b67210eb4c41e4ff6e6be309307ba0436801400da66036e5b712797fe2cd2d3ec7ef4718b4be1560d16720602ad060581b42b4cf#npm:5.18.0"],\
+            ["csv-parse", "npm:5.0.4"],\
             ["dotenv", "npm:16.0.0"],\
             ["eslint", "npm:8.13.0"],\
             ["eslint-config-airbnb-base", "virtual:fa036b0d334fd181bc81ec39b67210eb4c41e4ff6e6be309307ba0436801400da66036e5b712797fe2cd2d3ec7ef4718b4be1560d16720602ad060581b42b4cf#npm:15.0.0"],\
