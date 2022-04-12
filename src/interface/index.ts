@@ -1,1 +1,2 @@
-export * from './column.interface';
+export * from './Column.interface';
+export * from './MysteryObject.interface';

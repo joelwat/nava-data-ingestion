@@ -2,9 +2,9 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { parse } from 'csv-parse/sync';
 import { Column } from './interface';
+import { MysteryObject } from './interface';
 
 type Schemas = { [key: string]: Column[] };
-type MysteryObject = { [key: string]: unknown };
 
 export class InitService {
   async getSchemas() {
@@ -44,7 +44,7 @@ export class InitService {
   }
 
   async getData(schemas: Schemas) {
-    const data: { [key: string]: MysteryObject[] } = {};
+    const data: MysteryObject[] = [];
     const dataPath = path.join(`${__dirname}/../data`);
 
     try {
@@ -54,7 +54,6 @@ export class InitService {
       for (const file of dirRval) {
         const fileKey = file.substring(0, file.lastIndexOf('.'));
         const exists = await fs.stat(path.join(dataPath, file));
-        const fileData: MysteryObject[] = [];
 
         if (exists.isFile()) {
           await fs.readFile(path.join(dataPath, file))
@@ -91,14 +90,12 @@ export class InitService {
                       pos = pos + column.width;
                     });
 
-                    fileData.push(parsedColumn);
+                    data.push(parsedColumn);
                   }
                 }),
             )
             .catch((err) => console.error(err));
         }
-
-        data[fileKey] = fileData;
       }
     } catch (err) {
       console.log('ERROR!!!',err);
